@@ -44,11 +44,11 @@ export function Header() {
 
           {/* Desktop Auth Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <Button variant="ghost" className="text-foreground">
-              Login
+            <Button variant="ghost" className="text-foreground" asChild>
+              <Link href="/login">Login</Link>
             </Button>
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-              Sign Up
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+              <Link href="/signup">Sign Up</Link>
             </Button>
           </div>
 
@@ -80,11 +80,11 @@ export function Header() {
                 </Link>
               ))}
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                <Button variant="ghost" className="justify-start text-foreground">
-                  Login
+                <Button variant="ghost" className="justify-start text-foreground" asChild>
+                  <Link href="/login">Login</Link>
                 </Button>
-                <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-                  Sign Up
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+                  <Link href="/signup">Sign Up</Link>
                 </Button>
               </div>
             </nav>
