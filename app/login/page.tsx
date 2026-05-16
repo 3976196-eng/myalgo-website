@@ -22,12 +22,13 @@ export default function LoginPage() {
   // Google Login
   async function signInWithGoogle() {
     setLoading(true)
-    const { error } = await supabase.auth.signInWithOAuth({
-      provider: "google",
-      options: {
-        redirectTo: `${window.location.origin}/auth/callback`,
-      },
-    })
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider: "google",
+    options: {
+      redirectTo: "https://myalgo-website.vercel.app/auth/callback",
+      skipBrowserRedirect: false,
+    },
+  })
     if (error) setError(error.message)
     setLoading(false)
   }
