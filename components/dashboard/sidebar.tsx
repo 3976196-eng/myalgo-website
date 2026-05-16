@@ -20,13 +20,13 @@ import { useState } from "react"
 
 const navItems = [
   { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-  { name: "Strategy Builder", href: "/dashboard/strategy-builder", icon: Blocks },
-  { name: "My Strategies", href: "/dashboard/strategies", icon: FolderKanban },
-  { name: "Backtesting", href: "/dashboard/backtesting", icon: History },
-  { name: "Paper Trading", href: "/dashboard/paper-trading", icon: FileBarChart },
-  { name: "Live Trading", href: "/dashboard/live-trading", icon: Zap },
-  { name: "Reports", href: "/dashboard/reports", icon: PlayCircle },
-  { name: "Settings", href: "/dashboard/settings", icon: Settings },
+  { name: "Strategy Builder", href: "/strategy-builder", icon: Blocks },
+  { name: "My Strategies", href: "/my-strategies", icon: FolderKanban },
+  { name: "Backtesting", href: "/backtesting", icon: History },
+  { name: "Paper Trading", href: "/paper-trading", icon: FileBarChart },
+  { name: "Live Trading", href: "/live-trading", icon: Zap },
+  { name: "Reports", href: "/reports", icon: PlayCircle },
+  { name: "Settings", href: "/settings", icon: Settings },
 ]
 
 export function DashboardSidebar() {
