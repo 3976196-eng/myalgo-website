@@ -14,6 +14,8 @@ import {
   ChevronLeft,
   ChevronRight,
   TrendingUp,
+  Link2,
+  CreditCard,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useState } from "react"
@@ -26,6 +28,8 @@ const navItems = [
   { name: "Paper Trading", href: "/paper-trading", icon: FileBarChart },
   { name: "Live Trading", href: "/live-trading", icon: Zap },
   { name: "Reports", href: "/reports", icon: PlayCircle },
+  { name: "Broker Connection", href: "/broker-connection", icon: Link2 },
+  { name: "Subscription", href: "/subscription", icon: CreditCard },
   { name: "Settings", href: "/settings", icon: Settings },
 ]
 
